@@ -10,36 +10,68 @@
   </head>
   <body>
     <h1>Welcome to the JavaScript Challenge!</h1>
-    <p>
-      Are you ready to test your JavaScript knowledge? This is a one minute
-      quick quiz to see where you are on the JavaScript coding adventure. Click
-      the the Start button below.
-    </p>
-    <h2>GOOD LUCK</h2>
 
-    <div class="container1">
-      <button>START</button>
-      <label for="playerName">Player's Name</label>
-      <input type="text" id="player-name" class="player-name" />
-      <button>Next</button>
+    <div class="home-box custom-box hide">
+      <h3>Instructions</h3>
+      <p>Total Number of Questions: <span class="total-question">5</span></p>
+      <button type="button" class="btn">Start Quiz</button>
     </div>
-    <div class="container2">
-      <label for="recordScore">Record High Score</label>
+
+    <div class="quiz-box custom-box">
+      <div class="question-number"> ? of 5</div>
+      <div class="question-text">???</div>
+      <div class="option-container">
+        <div class="option"></div>
+        <div class="option"></div>
+        <div class="option"></div>
+        <div class="option"></div>
+      </div>
+      <div class="next-question-btn"></div>
+      <button type="button" class="btn">Next</button>
     </div>
-    <div class="container3">
-      <label for="question">Question</label>
-      <input type="" name="" id="" />
+    <div class="answers-indicator"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <div class="container4">
-      <label for="selectAnswer">Select Answer</label>
-      <ol>
-        <li>A.</li>
-        <li>B.</li>
-        <li>C.</li>
-        <li>D.</li>
-      </ol>
-      <p>Questions left</p>
-    </div>
-    <script src="script.js" defer></script>
+
+  <div class="result-box custom-box">
+    <h1>Quiz Results</h1>
+    <table>
+      <tr>
+        <td>Total Questions</td>
+        <td><span class = "total-questions"></span></td>
+      </tr>
+      <tr>
+        <td>Attempt</td>
+        <td><span class = "total-attempts"></span></td>
+      </tr>
+      <tr>
+        <td>Correct</td>
+        <td><span class = "total-correct"></span></td>
+      </tr>
+      <tr>
+        <td>Wrong</td>
+        <td><span class = "total-wrong"></span></td>
+      </tr>
+      <tr>
+        <td>Your Total Score</td>
+        <td><span class = "total-score"></span></td>
+      </tr>
+      <tr>
+        <td>High Score</td>
+        <td><span class = "high-score"> </span></td>
+      </tr>
+      <tr>
+    </table>
+    <button type="button" class="btn">Try Again</button>
+
+</div>
+
+
+<script src="script.js" defer></script>
+
   </body>
 </html>
